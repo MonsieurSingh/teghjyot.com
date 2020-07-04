@@ -18,29 +18,3 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-.teghjyot-nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	padding-right: 4em;
-	overflow: hidden;
-	background-color: #333;
-}
-
-.teghjyot-nav-item {
-	float: right;
-}
-
-.teghjyot-nav-link {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 4em 2em;
-	text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.teghjyot-nav-link:hover {
-	background-color: #111;
-}
