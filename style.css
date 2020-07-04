@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Muli&family=Open+Sans&display=swap");
+
+:root {
+	font-size: 16px;
+	--text-primary: #b6b6b6;
+	--text-secondary: #ececec;
+	--bg-primary: #23232e;
+	--bg-secondary: #141418;
+	--transition-speed: 600ms;
+	--Montserrat: "Montserrat", sans-serif;
+	--Muli: "Muli", sans-serif;
+	--OpenSans: "Open Sans", sans-serif;
+}
+
+body {
+	color: #141418;
+	background-color: #ececec;
+	margin: 0;
+	padding: 0;
+}
+
+.teghjyot-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 4em;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.teghjyot-nav-item {
+	float: right;
+}
+
+.teghjyot-nav-link {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 4em 2em;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.teghjyot-nav-link:hover {
+	background-color: #111;
+}
