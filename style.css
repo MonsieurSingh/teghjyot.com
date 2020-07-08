@@ -3,10 +3,10 @@
 :root {
 	font-size: 16px;
 	font-family: "Open Sans";
-	--text-primary: #b6b6b6;
-	--text-secondary: #ececec;
-	--bg-primary: #23232e;
-	--bg-secondary: #141418;
+	--text-primary: #1f1f1f;
+	--text-secondary: #000000;
+	--bg-primary: #ffffff;
+	--bg-secondary: #e4e4e4;
 	--transition-speed: 600ms;
 }
 
@@ -57,7 +57,7 @@ main {
 	transition: var(--transition-speed);
 }
 
-.teghjyot-nav-link:hover {
+.teghjyot-nav-link:hover:not(div) {
 	filter: grayscale(0%) opacity(1);
 	background: var(--bg-secondary);
 	color: var(--text-secondary);
@@ -65,12 +65,12 @@ main {
 
 .teghjyot-link-text {
 	display: block;
-	margin-left: 1rem;
+	margin-left: 0rem;
 }
 
 .fad,
 .teghjyot-nav-link svg {
-	width: 2rem;
+	width: 1rem;
 	min-width: 2rem;
 	margin: 0 1.5rem;
 }
@@ -182,4 +182,16 @@ main {
 
 .solar #solarIcon {
 	display: block;
+}
+
+.teghjyot-unselectable {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	cursor: default;
+}
+
+a {
+	cursor: default;
 }

@@ -9,12 +9,15 @@
 		<link rel="stylesheet" href="./icons/icons.css" />
 	</head>
 	<body>
-		<nav class="teghjyot-navbar">
+		<nav class="teghjyot-navbar teghjyot-unselectable">
 			<ul class="teghjyot-navbar-nav">
 				<li class="teghjyot-nav-item">
 					<a href="#" class="teghjyot-nav-link">
-						<i class="teghjyot-icon fad fa-cat-space fa-2x"></i>
-						<span class="teghjyot-link-text">Cats</span>
+						<i
+							id="houseTime"
+							class="teghjyot-icon fad fa-house-day fa-2x"
+						></i>
+						<span class="teghjyot-link-text">Home</span>
 					</a>
 				</li>
 
@@ -42,7 +45,7 @@
 				</li>
 
 				<li class="teghjyot-nav-item" id="themeButton">
-					<a href="#" class="teghjyot-nav-link">
+					<div class="teghjyot-nav-link">
 						<i
 							id="toggleOff"
 							class="fad fa-toggle-off fa-2x"
@@ -51,7 +54,7 @@
 						></i>
 
 						<span class="teghjyot-link-text">Themify</span>
-					</a>
+					</div>
 				</li>
 			</ul>
 		</nav>
