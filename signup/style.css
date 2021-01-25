@@ -12,7 +12,7 @@ body{
   width: 350px; padding: 20px; 
 }
 
-.login-box {
+.sign-up-box {
 	width: 300px;
 	padding: 40px;
 	position: absolute;
@@ -23,15 +23,15 @@ body{
 	text-align: center;
 }
 
-.login-box h1 {
+.sign-up-box h1 {
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 
-.login-box input[type="text"],
-.login-box input[type="email"],
-.login-box input[type="password"] {
+.sign-up-box input[type="text"],
+.sign-up-box input[type="email"],
+.sign-up-box input[type="password"] {
 	border: 0;
 	background: none;
 	display: block;
@@ -46,14 +46,14 @@ body{
 	transition: 0.25s;
 }
 
-.login-box input[type="text"]:focus,
-.login-box input[type="email"]:focus,
-.login-box input[type="password"]:focus {
+.sign-up-box input[type="text"]:focus,
+.sign-up-box input[type="email"]:focus,
+.sign-up-box input[type="password"]:focus {
 	width: 280px;
 	border-color: #2ecc71;
 }
 
-#login-form-submit {
+#sign-up-form-submit {
 	border: 0;
 	background: none;
 	display: block;
@@ -68,7 +68,7 @@ body{
 	cursor: pointer;
 }
 
-#login-form-submit:hover {
+#sign-up-form-submit:hover {
 	background: #2ecc71;
 }
 
@@ -95,7 +95,7 @@ body{
 	font-size: smaller;	
 }
 
-.login-box {
+.sign-up-box {
 	user-select: none;
 	-webkit-user-select: none;
 	-ms-touch-select: none;

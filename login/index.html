@@ -11,10 +11,10 @@
 	<body>
 	<form id="login-form" class="login-box">
       <h1>login</h1>
-      <input type="text" name="username" class="username" placeholder="Username" />
-      <input type="password" name="password" class="password" placeholder="Password" />
+			<input type="text" name="username" class="username" placeholder="Username" autocomplete="username" />
+      <input type="password" name="password" class="password" placeholder="Password" autocomplete="current-password" />
       <input type="submit" id="login-form-submit" value="Login" />
-      <button class="register-button">Sign Up</button>
+			<button class="register-button" onclick="window.location.replace('google.com')">Sign Up</button>
     </form>
     <script src="./script.js"></script>
   </body>

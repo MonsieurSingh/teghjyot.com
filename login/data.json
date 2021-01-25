@@ -1,3 +1,20 @@
 {
-  "loginDetails":[ "user♩web_dev", "tj♩tjs", "t♩lut" ]
+  "tj": [
+    {
+      "username": "tj",
+      "password": "tjs"
+    }
+  ],
+  "yo": [
+    {
+      "username": "yo",
+      "password": "chaddi"
+    }
+  ],
+  "tlut": [
+    {
+      "username": "tlut",
+      "password": "money gone"
+    }
+  ]
 }
