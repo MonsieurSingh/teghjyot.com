@@ -14,8 +14,13 @@
 			<input type="text" name="username" class="username" placeholder="Username" autocomplete="username" />
       <input type="password" name="password" class="password" placeholder="Password" autocomplete="current-password" />
       <input type="submit" id="login-form-submit" value="Login" />
-			<button class="register-button" onclick="window.location.replace('google.com')">Sign Up</button>
-    </form>
+		</form>
+		<button class="register-button" onclick="signUp()">Sign Up</button>
+		<script type="text/javascript">
+			signUp = () => {
+				window.location.replace('../signup/');
+			}
+		</script>
     <script src="./script.js"></script>
   </body>
 </html>

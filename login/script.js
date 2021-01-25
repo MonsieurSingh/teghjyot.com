@@ -21,7 +21,6 @@ fetch('./data.json')
   })
 
 loginButton.addEventListener("click", (e) => {
-  e.preventDefault();
   const username = loginForm.querySelector('.username').value;
   const password = loginForm.querySelector('.password').value;
 
