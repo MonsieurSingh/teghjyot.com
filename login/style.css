@@ -7,11 +7,13 @@ body {
 	background: #000;
 }
 body{ 
-  font: 14px sans-serif; 
+	font: 14px sans-serif;
+	align-items: center;
 }
 
 .wrapper{ 
-  width: 350px; padding: 20px; 
+	width: 350px;
+	padding: 20px; 
 }
 
 .login-box {
@@ -21,7 +23,7 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #000;
+	background: transparent;
 	text-align: center;
 }
 
@@ -74,10 +76,13 @@ body{
 	background: #2ecc71;
 }
 
+body {
+	text-align: center;
+}
+
 .register-button {
 	border: 0;
 	background: none;
-	display: block;
 	margin: 20px auto;
 	text-align: center;
 	border: 2px solid #ff0000;
@@ -103,4 +108,18 @@ body{
 	-ms-touch-select: none;
 	-ms-user-select: none;
 	-moz-user-select: none;
+}
+
+@media screen and (max-height: 600px) {
+	@media screen and (min-height: 400px){
+		.login-box {
+			margin-top: 5%;
+		}
+	}
+}
+
+@media screen and (max-height: 400) {
+	.login-box {
+		margin-top: 3rem;
+	}
 }

@@ -1,5 +1,5 @@
-const signupForm = document.getElementById("signup-form");
-const signupButton = document.getElementById("signup-form-submit");
+const signupForm = document.getElementById("sign-up-form");
+const signupButton = document.getElementById("sign-up-form-submit");
 
 var loggedIn = localStorage.getItem("loggedIn");
 if (!loggedIn){
@@ -8,6 +8,7 @@ if (!loggedIn){
   loggedIn = true;
   window.location.replace('../profile/');
 }
+
 
 var db;
 
@@ -18,16 +19,16 @@ fetch('../login/data.json')
   })
 
 signupButton.addEventListener('click', (e) => {
+  e.preventDefault();
   const username = signupForm.querySelector('.username').value;
   const password = signupForm.querySelector('.password').value;
-  var json = `"${username}": {
-    "username": "${username}",
-    "password": "${password}"
-  },`
+  
 
-  writeFile('../login/data.json', JSON.parse(json), err => {
-    if (err)
-      return console.log(err);
-  })
+  // loggedIn = true;
+  localStorage.setItem("username", username.toString());
+  localStorage.setItem("password", password.toString());
+  // localStorage.setItem("loggedIn", loggedIn);
+
+  window.location.replace('../profile');
 
 })
